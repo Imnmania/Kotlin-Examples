@@ -20,4 +20,8 @@ fun main() {
 
 }
 
-class Person(var name: String)
+class Person(var name: String) {
+    override fun toString(): String {
+        return "Person: name => ${this.name}"
+    }
+}
