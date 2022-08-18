@@ -10,4 +10,8 @@ fun main() {
     } else {
         println("You still have some calories left")
     }
+
+    // * One line conditions
+    val age = 9
+    if (age > 10) println("Age is greater than 10") else println("Age is less than 10")
 }

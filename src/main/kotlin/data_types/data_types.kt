@@ -26,6 +26,7 @@ fun main() {
     var fullName: String = "Hello world"
     println(fullName.length)
     println(fullName.toLowerCase())
+    println(fullName.lowercase())
 
     // * Char
     var c: Char = 'A' //? 16-bit unicode character
@@ -51,6 +52,7 @@ fun main() {
     var isBlank: Boolean = false
     println(isBlank)
     println(isBlank.not())
+    println(!isBlank)
     isBlank = "".isEmpty()
     println(isBlank)
     isBlank = "donn".isEmpty()
