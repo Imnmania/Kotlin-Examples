@@ -51,5 +51,9 @@ fun main() {
     userWithProperty.age = 100
     println(userWithProperty.age)
 
+    // * Classes with read-only properties
+    val userWithReadOnlyProperties = UserWithReadOnlyProperties("Jane", "Doe")
+    print(userWithReadOnlyProperties.fullNameLength)
+//    userWithReadOnlyProperties.fullNameLength = 20  // ! should throw error since val is not assignable
 }
 
