@@ -20,5 +20,19 @@ fun main() {
     friend.updateName("Bob")
     friend.printFullName()
 
+    // * Classes with constructors (primary)
+    var user2 = User_2(firstName = "Niloy", lastName = "Biswas")
+    println(user2)
+
+    // * Classes with multiple constructors
+    var user3 = User_3("usr_3_firsName", "usr_3_lastName")
+    println(user3)
+
+    var user3_2 = User_3(firstName = "Niloy", lastName = "Biswas", isPlatinum = true)
+    println(user3_2)
+
+    var cousin = User_3("Cousin Name")
+    println(cousin)
+
 }
 
