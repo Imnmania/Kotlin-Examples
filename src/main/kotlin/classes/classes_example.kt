@@ -53,7 +53,15 @@ fun main() {
 
     // * Classes with read-only properties
     val userWithReadOnlyProperties = UserWithReadOnlyProperties("Jane", "Doe")
-    print(userWithReadOnlyProperties.fullNameLength)
+    println(userWithReadOnlyProperties.fullNameLength)
 //    userWithReadOnlyProperties.fullNameLength = 20  // ! should throw error since val is not assignable
+
+    // * Classes with overriding getter
+    val userWithOverrideGetterSetter = UserWithOverrideGetterSetter("Niloy", lastName = "Biswas")
+    println(userWithOverrideGetterSetter.fullName)
+    userWithOverrideGetterSetter.fullName = "Jon"
+    println(userWithOverrideGetterSetter.fullName)
+    userWithOverrideGetterSetter.fullName = "John Cena"
+    println(userWithOverrideGetterSetter.fullName)
 }
 
