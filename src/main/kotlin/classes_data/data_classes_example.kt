@@ -10,6 +10,13 @@ fun main() {
     println(p2)
     println(p1.nameLength())
     println(p1.fullName())
+
+    // * data classes has default "component" methods
+    // * they are simply the parameters in order
+    val firstName = p1.component1()
+    val lastName = p1.component2()
+    val age = p1.component3()
+    println("$firstName $lastName $age")
 }
 
 /*
@@ -18,7 +25,12 @@ fun main() {
 * hashcodes
 * toString
 * */
-data class Person(val firstName: String, val lastName: String, val age: Int) {
+data class Person(
+    val firstName: String,
+    val lastName: String,
+    val age: Int
+) {
+
     fun fullName(): String {
         return "$firstName $lastName"
     }
