@@ -40,5 +40,16 @@ fun main() {
 
     val userWithInit2 = UserWithInit("John")
     println(userWithInit2)
+
+    // * Classes with properties
+    val userWithProperty = UserWithProperties(firstName = "John", lastName = "Doe")
+    println(userWithProperty)
+    println(userWithProperty.fullName)
+    userWithProperty.fullName = "Hello World"
+    println(userWithProperty.fullName)
+    println(userWithProperty.age)
+    userWithProperty.age = 100
+    println(userWithProperty.age)
+
 }
 
