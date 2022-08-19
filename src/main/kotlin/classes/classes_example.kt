@@ -34,5 +34,11 @@ fun main() {
     var cousin = User_3("Cousin Name")
     println(cousin)
 
+    // * Classes with initialize function
+    val userWithInit =  UserWithInit(firstName = "fname", lastName = "lname")
+    println(userWithInit)
+
+    val userWithInit2 = UserWithInit("John")
+    println(userWithInit2)
 }
 
