@@ -63,5 +63,13 @@ fun main() {
     println(userWithOverrideGetterSetter.fullName)
     userWithOverrideGetterSetter.fullName = "John Cena"
     println(userWithOverrideGetterSetter.fullName)
+
+    // * Classes with companion objects ( similar to static classes in Java or Dart )
+    val userWithCompanionObj = UserWithCompanionObj.createUser("Foo", "Bar")
+    println(userWithCompanionObj)
+
+    val users = UserWithCompanionObj.createUsers(5)
+    println(users)
+    users.forEach{ println(it) }
 }
 
