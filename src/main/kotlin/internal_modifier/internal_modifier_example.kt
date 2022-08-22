@@ -2,11 +2,13 @@ package internal_modifier
 
 
 fun main() {
-    val v = Vehicle("Red")
     val t = Truck("Blue")
+    val v = Vehicle("Red")
 
 //    t.addAxel(30)
     t.info()
+    v.info()
+
 }
 
 internal class Axle (val numberOfWheels: Int) {
@@ -22,9 +24,13 @@ open class Vehicle(var color: String) {
     }
 
     fun addAxel(numberOfWheels: Int) {
+        if (!::axles.isInitialized) {
+            axles = ArrayList<Axle>()
+        }
         axles.add(Axle(numberOfWheels))
     }
 
+    // the block below will throw error, since Internal type can/should not be exposed to the public
 //    fun getAxleInfo() : List<Axle> {
 //        return axles
 //    }
