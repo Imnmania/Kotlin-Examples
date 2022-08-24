@@ -1,4 +1,3 @@
-import Cow as Cow
 
 fun main () {
     val toy = GenericToy(hasReturnPolicy = true)
