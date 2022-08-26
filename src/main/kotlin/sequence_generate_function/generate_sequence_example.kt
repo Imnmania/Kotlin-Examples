@@ -1,6 +1,3 @@
-import java.util.concurrent.TimeUnit
-import kotlin.system.measureNanoTime
-
 fun main() {
 
     val list = generateSequence(1) { it + 1 }
