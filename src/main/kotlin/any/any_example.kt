@@ -21,8 +21,14 @@ fun main() {
 //    println(age.javaClass.name)
 //    println(age::class)
 
-    val stuff = getStuff("1")
+    val stuff = getStuff("4")
     println(stuff)
+    val casted : Person = stuff as Person
+    println(casted.name)
+
+    // safe cast ( as? returns null if unable to cast )
+    val casted2 = stuff as? Person
+    println(casted2?.name)
 
 }
 
@@ -31,6 +37,7 @@ fun getStuff(value: String) : Any {
         "1" -> 1
         "2" -> "Hello"
         "3" -> true
+        "4" -> Person("Donn")
         else -> "N/A"
     }
 }
