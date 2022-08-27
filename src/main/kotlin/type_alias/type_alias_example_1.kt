@@ -7,8 +7,10 @@ package type_alias
 typealias AuthToken = String
 
 fun main() {
-    val user = User("Donn", "#$K@J#H$J#H$*(E&U*(#&!@!")
-    Order(user.authToken)
+    val user = User("Donn", "asdasrejhrjkw34564545jhj")
+    val order = Order(user.authToken)
+    print(order)
+
 }
 
 //data class AuthToken(val token: String)
