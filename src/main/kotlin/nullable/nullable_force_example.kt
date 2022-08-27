@@ -12,6 +12,11 @@ fun main() {
 
     println(length)
 
-    val person: Person? = Person("Kon")
-    println(person!!.name)
+//    val person: Person? = Person("Kon")
+//    println(person!!.name)
+
+    //* requireNotNull and checkNotNull are the same
+    val person: Person? = null
+    val nameFromApi = requireNotNull(person, {"The name should not be null !!!"}).name
+    print(nameFromApi)
 }
