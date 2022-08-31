@@ -1,4 +1,4 @@
-package calling_from_java.models
+package calling_from_java_kotlin.models
 
 data class Customer(val name: String) {
 
