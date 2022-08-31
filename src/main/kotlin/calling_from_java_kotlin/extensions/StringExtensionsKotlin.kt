@@ -1,3 +1,6 @@
+//* use the below line only when calling this from Java
+@file:JvmName("StringExtensions")
+
 package calling_from_java_kotlin.extensions
 
 // Niloy Biswas = "NB"
