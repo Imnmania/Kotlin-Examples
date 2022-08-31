@@ -1,5 +1,6 @@
 package calling_from_java_kotlin.services;
 
+import calling_from_java_kotlin.extensions.StringExtensionsKotlinKt;
 import calling_from_java_kotlin.models.Customer;
 import org.jetbrains.annotations.NotNull;
 
@@ -14,7 +15,11 @@ public class CustomerService {
     @NotNull
     public Customer customerFromSocial(String handle) {
         // social api
-        return new Customer("Bob");
+        Customer c = new Customer("Bob");
+        //* calling kotlin extension functions
+        String initials = StringExtensionsKotlinKt.initials(c.getName());
+        System.out.println(initials);
+        return c;
     }
 
     @NotNull
