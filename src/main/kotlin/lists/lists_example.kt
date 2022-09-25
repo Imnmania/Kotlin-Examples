@@ -2,6 +2,7 @@ fun main() {
     // * immutable list
     val items = listOf(1, 2, 3, 4, 5)
     items.forEach( { println(it) } )
+    println(items)
 
     val users = listOf<User>(
         User("Niloy", "Biswas"),

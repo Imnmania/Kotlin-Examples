@@ -1,7 +1,7 @@
 package calling_from_java_kotlin.services;
 
 import calling_from_java_kotlin.extensions.StringExtensions;
-import calling_from_java_kotlin.extensions.StringExtensionsKotlinKt;
+//import calling_from_java_kotlin.extensions.StringExtensionsKotlinKt;
 import calling_from_java_kotlin.models.Customer;
 import org.jetbrains.annotations.NotNull;
 
