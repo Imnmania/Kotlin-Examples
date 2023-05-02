@@ -43,7 +43,7 @@ fun main() {
 }
 
 fun purpleCow() {
-    println("Hello Purple Cow!!!")
+    println("Hello Purple classes_interface.Cow!!!")
     println("Hello there")
 
     moo()

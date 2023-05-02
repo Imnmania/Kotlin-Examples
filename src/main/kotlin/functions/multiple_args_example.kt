@@ -1,3 +1,4 @@
+package functions
 /*
 * Multiple arguments or varargs
 * */

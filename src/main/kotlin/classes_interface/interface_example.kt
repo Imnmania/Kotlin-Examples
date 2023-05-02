@@ -1,4 +1,4 @@
-
+package classes_interface
 fun main () {
     val toy = GenericToy(hasReturnPolicy = true)
     toy.discountPercent()

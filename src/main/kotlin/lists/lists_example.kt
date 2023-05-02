@@ -1,3 +1,5 @@
+import late_init.User
+
 fun main() {
     // * immutable list
     val items = listOf(1, 2, 3, 4, 5)

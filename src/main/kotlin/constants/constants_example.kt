@@ -20,6 +20,6 @@ class User(var firstName: String, var lastName: String) {
     }
 
     override fun toString(): String {
-        return "User ( First Name => $firstName, Last Name => $lastName )"
+        return "late_init.User ( First Name => $firstName, Last Name => $lastName )"
     }
 }

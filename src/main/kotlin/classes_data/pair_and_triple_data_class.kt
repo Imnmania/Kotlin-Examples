@@ -16,4 +16,8 @@ fun main() {
     println(triple.first)
     println(triple.second)
     println(triple.third)
+
+    println("----------------------------")
+    println(pair)
+    println(triple)
 }

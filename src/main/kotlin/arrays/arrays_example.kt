@@ -1,3 +1,5 @@
+import late_init.User
+
 fun main() {
     val items = arrayOf(1,2,3,4,5)
     items.forEach { println(it) }

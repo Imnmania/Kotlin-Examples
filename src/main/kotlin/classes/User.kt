@@ -17,6 +17,6 @@ class User {
     }
 
     override fun toString(): String {
-        return "User: ( firstName => ${this.firstName}, lastName => ${this.lastName} )"
+        return "late_init.User: ( firstName => ${this.firstName}, lastName => ${this.lastName} )"
     }
 }

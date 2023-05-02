@@ -1,3 +1,5 @@
+package input_output
+
 fun main () {
     print("Enter text: ")
     // ? in kotlin, readline() takes the input from console

@@ -1,3 +1,5 @@
+package functions
+
 fun main() {
     printUserInfo("Niloy")
     printUserInfo("John Doe", 12)
@@ -9,10 +11,10 @@ fun printUserInfo(name: String, age: Int? = null, favoriteColor: String? = null)
 }
 
 // * Overloading
-//fun printUserInfo(name: String, age: Int) {
+//fun functions.printUserInfo(name: String, age: Int) {
 //    println("Name => $name, Age => $age")
 //}
 //
-//fun printUserInfo(name: String, age: Int, favoriteColor: String) {
+//fun functions.printUserInfo(name: String, age: Int, favoriteColor: String) {
 //    println("Name => $name, Age => $age, Favcolor => $favoriteColor")
 //}

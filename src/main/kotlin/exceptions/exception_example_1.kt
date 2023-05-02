@@ -6,8 +6,8 @@ import java.lang.IllegalArgumentException
 fun main() {
     val p = Person4("Don", 13)
     if (p.age < 18) {
-//        throw Exception("User is not old enough")
-        throw IllegalArgumentException("User is not old enough")
+//        throw Exception("late_init.User is not old enough")
+        throw IllegalArgumentException("late_init.User is not old enough")
     }
 }
 
